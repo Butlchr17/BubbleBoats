@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://c2rbp460bluye"]
+
+[ext_resource type="Script" path="res://CharacterMovement.gd" id="1_8orbb"]
+[ext_resource type="Texture2D" uid="uid://bskljphsis7an" path="res://temp_player.png" id="2_sopap"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_5xc8d"]
+
+[node name="PlayerBoat" type="CharacterBody2D"]
+script = ExtResource("1_8orbb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_5xc8d")
+
+[node name="PlayerCam" type="Camera2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_sopap")
