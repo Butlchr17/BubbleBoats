@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://bd0gtb7nl1o3d"]
+[gd_scene load_steps=6 format=3 uid="uid://bd0gtb7nl1o3d"]
 
 [ext_resource type="Texture2D" uid="uid://dnth4btgalobr" path="res://tempAISprite.png" id="1_sulid"]
+[ext_resource type="Script" path="res://CharacterAIMovement.gd" id="1_u05x6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ojp41"]
 
@@ -9,6 +10,7 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_aggb1"]
 
 [node name="AICharacter" type="CharacterBody2D"]
+script = ExtResource("1_u05x6")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_ojp41")
